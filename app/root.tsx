@@ -10,6 +10,7 @@ import {
 } from "@remix-run/react";
 
 import stylesheet from "~/tailwind.css"
+import Nav from "./components/ui/nav";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -25,6 +26,7 @@ export default function App() {
         <Links />
       </head>
       <body className="bg-background text-foreground min-h-screen flex flex-col items-center animate-in">
+        <Nav />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
